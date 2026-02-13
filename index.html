@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Our Products</h1>
+
+      <div class="controls">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search products..."
+          aria-label="Search products by title"
+        />
+        <button id="add-product-btn" class="btn btn-add-product">
+          Add Sample Product
+        </button>
+      </div>
+
+      <div id="product-grid" class="product-grid">
+        <div class="product-card" data-title="Wireless Headphones">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop"
+            alt="Wireless Headphones"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2 class="product-title">Wireless Headphones</h2>
+            <p class="product-description">
+              Premium noise-cancelling headphones with 30-hour battery life and
+              deep bass.
+            </p>
+            <p class="product-price">$89.99</p>
+            <button class="btn btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-title="Smart Watch">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop"
+            alt="Smart Watch"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2 class="product-title">Smart Watch</h2>
+            <p class="product-description">
+              Track fitness, receive notifications, and monitor heart rate all
+              day long.
+            </p>
+            <p class="product-price">$199.99</p>
+            <button class="btn btn-cart">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-title="Portable Speaker">
+          <img
+            src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop"
+            alt="Portable Speaker"
+            class="product-image"
+          />
+          <div class="product-info">
+            <h2 class="product-title">Portable Speaker</h2>
+            <p class="product-description">
+              Waterproof Bluetooth speaker with 360-degree sound and 12-hour
+              playtime.
+            </p>
+            <p class="product-price">$49.99</p>
+            <button class="btn btn-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
